@@ -24,3 +24,12 @@ We can instead do this:
 [Adding a CSS Modules Stylesheet](https://facebook.github.io/create-react-app/docs/adding-a-css-modules-stylesheet)
 In a few words:
 "CSS Modules are turned on for files ending with the .module.css extension".
+
+### commit: basic configuration
+
+We just set up the project. That is we created all the necessary folders and files.
+We also:
+
+- started the basic implementation of the Burger Builder Container.
+- added a dynamic ingredient component.
+- added Prop Type Validation.
