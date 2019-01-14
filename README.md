@@ -14,3 +14,7 @@ Note: we are not going to upload all the lessons, because it's not a free course
 ### commit: update readme
 
 First we are going to update this file. And check if we can go back to our master, where we want to have the original readme file.
+
+### commit: udate readme
+
+So it works! And now we can go on with our changes.
