@@ -33,3 +33,15 @@ We also:
 - started the basic implementation of the Burger Builder Container.
 - added a dynamic ingredient component.
 - added Prop Type Validation.
+
+### commmit: outputting ingredients dynamically
+
+We just:
+
+- started the Burger Component, and
+- output ingredients dynamically
+
+Then in the Q&A section, we found a very interesting modification of the code.
+The first version is simple. It just outputs the ingredients one after the other.
+The second version gives the ability to arrange the ingredients however you want.
+For the second version, we are going to create an other branch, called 'relative positioning'
