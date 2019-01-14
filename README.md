@@ -45,3 +45,7 @@ Then in the Q&A section, we found a very interesting modification of the code.
 The first version is simple. It just outputs the ingredients one after the other.
 The second version gives the ability to arrange the ingredients however you want.
 For the second version, we are going to create an other branch, called 'relative positioning'
+
+### commit: update readme
+
+So we made a commit in the new 'relative positioning' branch after we updated the this read me file. And it works! We now have two different branches with different readme files. So next we're going to work and add and commit our second version in the 'relative positioning' branch. Then we're going to come back on the master and go on from where we left it.
