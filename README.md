@@ -21,6 +21,8 @@ So it works! And now we can go on with our changes.
 
 ### commit: 'added second version'
 
+[Link in Q&A](https://www.udemy.com/react-the-complete-guide-incl-redux/learn/v4/questions/6002318)
+
 So we kind of copy paste the second version. It seems like an an experts work. I'will try some console logs to understand more, but I won't dive to much to it.
 
 ### commit: adding comments in 2nd version
