@@ -15,6 +15,8 @@ class BurgerBuilder extends Component {
   //   }
   // };
   render() {
+    // Finaly here gets the burger build, as the ingredients get the attribute
+    // gets access to the state.....
     return (
       <Eject>
         <Burger ingredients={this.state.ingredients} />
