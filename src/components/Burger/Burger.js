@@ -1,27 +1,32 @@
 import React from "react";
 import classes from "./Burger.module.css";
 import BurgerIngredient from "./BurgerIngredient/BurgerIngredient";
+// Check out also the other way in Q&A
+// https://www.udemy.com/react-the-complete-guide-incl-redux/learn/v4/questions
 
 // child of BurgerBuilder
 const burger = props => {
-  const transformedIngredients = Object.keys(props.ingredients).map(igKey => {
-    // transform the igKey, string value, into an array
-    // with as many elements as the value of the igKey
-    // We use an underscore in the second map func,
-    // because we don't care about the element itself,
-    // since we are going to pass it to the <BurgerIngredient />
-    // through 'type'.
-    return [...Array(props.ingredients[igKey])].map((_, index) => (
-      <BurgerIngredient key={igKey + index} type={igKey} />
-    ));
-  });
-  return (
-    <div className={classes.Burger}>
-      <BurgerIngredient type="bread-top" />
-      {transformedIngredients}
-      <BurgerIngredient type="bread-bottom" />
-    </div>
-  );
+  // Object.keys(obj) turns obj in an array
+
+  const ingredients = [<BurgerIngredient type="bread-top" />];
+
+  // This is for the key. You use it instead of index.
+  let keyCount = 0;
+
+  //So you iterate over the ingredients obj of the state
+
+  for (let key in props.ingredients) {
+    // Then you get the value of each property
+    // and you push as many BurgerIngredients as the value
+
+    for (let i = 0; i < props.ingredients[key]; i++) {
+      ingredients.push(<BurgerIngredient type={key} key={keyCount++} />);
+    }
+  }
+
+  ingredients.push(<BurgerIngredient type="bread-bottom" key={keyCount} />);
+
+  return <div className={classes.Burger}>{ingredients}</div>;
 };
 
 export default burger;
