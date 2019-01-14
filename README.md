@@ -11,25 +11,6 @@ English, Italian and 4 more
 
 Note: we are not going to upload all the lessons, because it's not a free course.
 
-### npm run eject
+### commit: update readme
 
-First we want to enable CSS Modules, so we run 'npm run eject'
-in order to get access to the config file.
-
-CSS Modules let you use the same CSS class name in different files without worrying about naming clashes.
-
-But, because we are in the future, we don't need to eject anymore,
-in order to use CSS Modules.
-We can instead do this:
-[Adding a CSS Modules Stylesheet](https://facebook.github.io/create-react-app/docs/adding-a-css-modules-stylesheet)
-In a few words:
-"CSS Modules are turned on for files ending with the .module.css extension".
-
-### commit: basic configuration
-
-We just set up the project. That is we created all the necessary folders and files.
-We also:
-
-- started the basic implementation of the Burger Builder Container.
-- added a dynamic ingredient component.
-- added Prop Type Validation.
+First we are going to update this file. And check if we can go back to our master, where we want to have the original readme file.
