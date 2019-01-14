@@ -18,3 +18,7 @@ First we are going to update this file. And check if we can go back to our maste
 ### commit: udate readme
 
 So it works! And now we can go on with our changes.
+
+### commit: 'added second version'
+
+So we kind of copy paste the second version. It seems like an an experts work. I'will try some console logs to understand more, but I won't dive to much to it.

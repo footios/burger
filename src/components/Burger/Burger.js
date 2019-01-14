@@ -14,6 +14,9 @@ const burger = props => {
 
   const transformedIngredients = props.ingredients
     .filter(ing => {
+      //So here you access the addable array and you find the ingedient
+      // that matches the chosen ingredient.
+      // Then you map the results in a BurgerIngredient element-component.
       return ingConfig.addable.find(avIng => avIng.type === ing);
     })
     .map((ing, i) => <BurgerIngredient key={ing + i} type={ing} />);
