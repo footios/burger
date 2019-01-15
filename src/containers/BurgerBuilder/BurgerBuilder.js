@@ -1,8 +1,14 @@
 import React, { Component } from "react";
-import Eject from "./../../hoc/Eject";
-import Burger from "./../../components/Burger/Burger";
+
+import Eject from "../../hoc/Eject";
+import Burger from "../../components/Burger/Burger";
+import BuildControls from "../../components/Burger/BuildControls/BuildControls";
 
 class BurgerBuilder extends Component {
+  // constructor(props) {
+  //     super(props);
+  //     this.state = {...}
+  // }
   state = {
     ingredients: {
       salad: 0,
@@ -11,11 +17,12 @@ class BurgerBuilder extends Component {
       meat: 0
     }
   };
+
   render() {
     return (
       <Eject>
         <Burger ingredients={this.state.ingredients} />
-        <div>Build Controls</div>
+        <BuildControls />
       </Eject>
     );
   }

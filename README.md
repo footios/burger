@@ -63,3 +63,7 @@ We found a simpler solution in Q&A and we added it to the project in the accordi
 In this case, we paused the video, and we tried to find a solution, for if there are no ingredients selected. So in the Burger.js we used the every method, instead of the reduce.
 
 ### commit: using reduce
+
+### commit: added buildControls
+
+Lecture 123.
