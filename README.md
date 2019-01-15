@@ -11,49 +11,56 @@ English, Italian and 4 more
 
 Note: we are not going to upload all the lessons, because it's not a free course.
 
-### npm run eject
+### commit: check readme
 
-First we want to enable CSS Modules, so we run 'npm run eject'
-in order to get access to the config file.
+The using-Array branch, is from this question:
 
-CSS Modules let you use the same CSS class name in different files without worrying about naming clashes.
+I think we don't need to use spread operator that seems unnecessary solution for the problem
+Mehmet · Lecture 120 · a month ago
+Array(size) and new Array(size) is the same thing for creating NEW array, I think [Array(props.ingredients[igKey])] would be sufficient implementation for that case.
 
-But, because we are in the future, we don't need to eject anymore,
-in order to use CSS Modules.
-We can instead do this:
-[Adding a CSS Modules Stylesheet](https://facebook.github.io/create-react-app/docs/adding-a-css-modules-stylesheet)
-In a few words:
-"CSS Modules are turned on for files ending with the .module.css extension".
+I think nested map functions are hard to understand. For code readiblity for loops would be more cleaner.
 
-### commit: basic configuration
+Guys, What Do you think about it?
 
-We just set up the project. That is we created all the necessary folders and files.
-We also:
+... check answer in Burger
 
-- started the basic implementation of the Burger Builder Container.
-- added a dynamic ingredient component.
-- added Prop Type Validation.
+Extra comments from [Q&A](https://www.udemy.com/react-the-complete-guide-incl-redux/learn/v4/questions/5823946):
 
-### commmit: outputting ingredients dynamically
+Thank you David for your response
 
-We just:
+I understand the logic why instructor coded logic with spread(...) operator
 
-- started the Burger Component, and
-- output ingredients dynamically
+For Example:
 
-Then in the Q&A section, we found a very interesting modification of the code.
-The first version is simple. It just outputs the ingredients one after the other.
-The second version gives the ability to arrange the ingredients however you want.
-For the second version, we are going to create an other branch, called 'relative positioning'
+let firstArray = [Array(5)];
 
-### commit: update readme
+// Length of array is 1 because there is no element to asign when defining array
 
-So we made a commit in the new 'relative positioning' branch after we updated this read me file. And it works! We now have two different branches with different readme files. So next we're going to work (on relative positioning) and add and commit and push our second version in the 'relative positioning' branch. Then we're going to come back on the master and go on from where we left it, without the changes of the second version.
+firstArray.map( () => console.log('Hello'));
 
-### update readme
+// Will Print Just One Hello because map function runs iteratively and call its callback function which defined in it and return the result as array
 
-So we are finished with the relative positioning and we may go on with our course.
+let secondArray [...Array(5)];
 
-### commit (in simpler solution branch): simpler solution added
+secondArray.map(() => {console.log('Hello');})
 
-We found a simpler solution in Q&A and we added it to the project in the according branch.
+//Will Print Hello 5 times
+
+let a = [Array(1)];
+
+let b = [...Array(1)];
+
+//On Google Chrome Version 70.0.3538.110 (Official Build) (64-bit)
+
+console.log(a[0]); // Will Return Empty but c[1] will return undefined
+
+console.log(b[0]); // Will return undefined
+
+So, I think asigning undefined to array indexes is just for increasing array counter and make it happen with assigning meaningless values
+
+Instructor just created undefined valued arrays with specified sizes
+
+Thank you very much David.
+
+Thank you for your helpful comments.
