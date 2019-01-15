@@ -60,4 +60,6 @@ We found a simpler solution in Q&A and we added it to the project in the accordi
 
 ### commit: using every
 
-In this case, we paused the video, and we tried to find a solution, for if there are no ingredients selected. So we used the every method, instead of the reduce.
+In this case, we paused the video, and we tried to find a solution, for if there are no ingredients selected. So in the Burger.js we used the every method, instead of the reduce.
+
+### commit: using reduce

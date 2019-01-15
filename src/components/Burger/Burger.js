@@ -16,9 +16,11 @@ const burger = props => {
         <BurgerIngredient key={igKey + index} type={igKey} />
       ));
     })
-    .every(ing => ing.length === 0);
+    .reduce((acc, elem) => {
+      return acc.concat(elem);
+    }, []);
 
-  if (transformedIngredients) {
+  if (transformedIngredients.length === 0) {
     transformedIngredients = <p> Please start adding ingredients! </p>;
   }
 
