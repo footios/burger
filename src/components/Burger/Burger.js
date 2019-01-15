@@ -15,6 +15,7 @@ const burger = props => {
       <BurgerIngredient key={igKey + index} type={igKey} />
     ));
   });
+  console.log(transformedIngredients);
   return (
     <div className={classes.Burger}>
       <BurgerIngredient type="bread-top" />
