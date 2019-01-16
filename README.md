@@ -80,3 +80,9 @@ ingredient, while its value was 0. Check the case-less branch....
 ### commit: subtruct from zero
 
 L. 125 We disabled the Less button when there are 0 ingredients.....
+
+### git commit -m 'burger price'
+
+L. 126
+Switched to a new branch 'burger-price'
+Our way is not subtructing right.
