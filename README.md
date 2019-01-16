@@ -71,3 +71,8 @@ Lecture 123.
 ### commit: added handlers
 
 In BurgerBuilder we added two funcs which hanlde the adding and removing of ingredients (L. 124).
+
+### commit: less case
+
+We tried to find a solution for the error that occured when trying to remove an
+ingredient, while its value was 0. Check the case-less branch....
