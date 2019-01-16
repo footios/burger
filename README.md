@@ -67,3 +67,7 @@ In this case, we paused the video, and we tried to find a solution, for if there
 ### commit: added buildControls
 
 Lecture 123.
+
+### commit: added handlers
+
+In BurgerBuilder we added two funcs which hanlde the adding and removing of ingredients (L. 124).
