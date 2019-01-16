@@ -85,4 +85,8 @@ L. 125 We disabled the Less button when there are 0 ingredients.....
 
 L. 126
 Switched to a new branch 'burger-price'
-Our way is not subtructing right.
+Checkout BurgerBuilder.
+Our way is not subtructing right. Bug found!
+From Max => func toFixed(2)
+
+### git commit -m 'fixed'

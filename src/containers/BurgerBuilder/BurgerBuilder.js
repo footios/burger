@@ -19,7 +19,7 @@ class BurgerBuilder extends Component {
       cheese: 0,
       meat: 0
     },
-    totalPrice: 0
+    totalPrice: 4
   };
 
   addIngredientHandler = type => {
@@ -31,9 +31,9 @@ class BurgerBuilder extends Component {
     updatedIngredients[type] = updatedCount;
     const priceAddition = INGREDIENT_PRICES[type];
     const oldPrice = this.state.totalPrice;
-    const newPrice = oldPrice * 1000 - priceAddition * 1000;
+    const newPrice = oldPrice + priceAddition;
     this.setState({
-      totalPrice: newPrice / 1000,
+      totalPrice: newPrice,
       ingredients: updatedIngredients
     });
   };
@@ -47,10 +47,10 @@ class BurgerBuilder extends Component {
     updatedIngredients[type] = updatedCount;
     const priceDiduction = INGREDIENT_PRICES[type];
     const oldPrice = this.state.totalPrice;
-    const newPrice = oldPrice * 1000 - priceDiduction * 1000;
+    const newPrice = oldPrice - priceDiduction;
 
     this.setState({
-      totalPrice: newPrice / 1000,
+      totalPrice: newPrice,
       ingredients: updatedIngredients
     });
   };
@@ -78,7 +78,9 @@ class BurgerBuilder extends Component {
     return (
       <Eject>
         <Burger ingredients={this.state.ingredients} />
-        <div style={{ textAlign: "center" }}>{this.state.totalPrice}</div>
+        <div style={{ textAlign: "center" }}>
+          {this.state.totalPrice.toFixed(2)}
+        </div>
         <BuildControls
           ingredientAdded={this.addIngredientHandler}
           ingredientRemoved={this.removeIngredientHandler}
