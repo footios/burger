@@ -72,7 +72,13 @@ Lecture 123.
 
 In BurgerBuilder we added two funcs which hanlde the adding and removing of ingredients (L. 124).
 
-### commit: case less -b
+### commit: less case
 
-In L. 125, before the instructor handled the error we had, if the customer
-tried to subtruct an ingredient while there where no ingredients, we tried to find a way on our own. We passed through props the state to BuildControl.js. And then we just disabled the Less button, in case there are no ingredients. But that only worked if all the ingredients values where 0. So we tried to hack it in the BuildControls.js. But there we get an error. We are about to post the error. And go on with the instructors way. We saved our code in the case-less branch.
+We tried to find a solution for the error that occured when trying to remove an
+ingredient, while its value was 0. Check the case-less branch....
+
+### commit: subtruct from zero
+
+L. 125 We disabled the Less button when there are 0 ingredients.....
+
+### git commit -m 'less button v2'
