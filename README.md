@@ -82,3 +82,7 @@ ingredient, while its value was 0. Check the case-less branch....
 L. 125 We disabled the Less button when there are 0 ingredients.....
 
 ### git commit -m 'less button v2'
+
+### commit -m 'fixed error'
+
+We fixed the error in BuildControls but now we get one in Burger.

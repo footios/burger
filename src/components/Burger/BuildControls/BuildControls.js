@@ -10,40 +10,39 @@ const controls = [
 ];
 
 const buildControls = props => {
-
   let ingredientsState = Object.values(props.less);
   console.log("ingredientsState ", ingredientsState);
 
   let buildControl = ingredientsState.map(ctrl => {
-    let component = null;
+    let component = [];
 
     // Here I iterate through the array of ingredients values,
     // and if the value is 0, then I return a component without
     // the 'removed' attribute. So it's disabled
     // Other wise a full functional button gets returned.
-   
-      if (ctrl === 0) {
-        component = (
-          <BuildControl
-            key={ctrl.label}
-            label={ctrl.label}
-            added={() => props.ingredientAdded(ctrl.type)}
-          />
-        );
-      } else if (ctrl > 0) {
-        component = (
-          <BuildControl
-            key={ctrl.label}
-            label={ctrl.label}
-            added={() => props.ingredientAdded(ctrl.type)}
-            removed={() => props.ingredientRemoved(ctrl.type)}
-          />
-        );
-      }
-    
+
+    if (ctrl === 0) {
+      component.push(
+        <BuildControl
+          key={ctrl.label}
+          label={ctrl.label}
+          added={() => props.ingredientAdded(ctrl.type)}
+        />
+      );
+    } else if (ctrl > 0) {
+      component.push(
+        <BuildControl
+          key={ctrl.label}
+          label={ctrl.label}
+          added={() => props.ingredientAdded(ctrl.type)}
+          removed={() => props.ingredientRemoved(ctrl.type)}
+        />
+      );
+    }
+
     return component;
-  };
-  
+  });
+
   return <div className={classes.BuildControls}>{buildControl}</div>;
 };
 
