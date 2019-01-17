@@ -57,3 +57,5 @@ So we are finished with the relative positioning and we may go on with our cours
 ### commit (in simpler solution branch): simpler solution added
 
 We found a simpler solution in Q&A and we added it to the project in the according branch.
+
+### git commit -m fixed key error
