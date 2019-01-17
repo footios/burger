@@ -28,11 +28,11 @@ class BurgerBuilder extends Component {
     //   return acc + elem;
     // }, 0);
 
-    // const sum = Object.keys(ingredients)
-    //   .map(ing => ingredients[ing])
-    //   .reduce((acc, elem) => {
-    //     return acc + elem;
-    //   }, 0);
+    const sum = Object.keys(ingredients)
+      .map(ing => ingredients[ing])
+      .reduce((acc, elem) => {
+        return acc + elem;
+      }, 0);
 
     // console.log(sum);
 

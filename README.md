@@ -83,5 +83,9 @@ L. 125 We disabled the Less button when there are 0 ingredients.....
 
 ### git commit -m 'price control'
 
-L. 126 - In branch burger price we tried somethig but...
+L. 126 - In branch burger-price we tried somethig but...
 Here we used toFixed(2) in BuildControls
+
+### git commit -m 'order-button'
+
+L. 127 Added order button. Plus made it being disabled when no orders are placed.
