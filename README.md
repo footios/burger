@@ -116,3 +116,7 @@ Section 8, Lecture 133
 ### git commit -m 'added toolbar'
 
 134.
+
+### git commit -m 'logo'
+
+135.
