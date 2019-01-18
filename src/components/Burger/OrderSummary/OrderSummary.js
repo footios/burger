@@ -1,5 +1,6 @@
 import React from "react";
 import Eject from "../../../hoc/Eject";
+import Button from "../../UI/Button/Button";
 
 // child of BurgerBuiler
 const orderSummary = props => {
@@ -18,6 +19,12 @@ const orderSummary = props => {
       <p>Burger ingredients:</p>
       <ul>{ingredientSummary}</ul>
       <p>Continue to Checkout?</p>
+      <Button btnType="Danger" clicked={props.purchaseCanselled}>
+        CANCEL
+      </Button>
+      <Button btnType="Success" clicked={props.purchaseContinued}>
+        CONTINUE
+      </Button>
     </Eject>
   );
 };
