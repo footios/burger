@@ -93,3 +93,7 @@ L. 127 Added order button. Plus made it being disabled when no orders are placed
 ### git commit -m 'order summary modal'
 
 L. 128 We added a modal where you can see the summary of the order.
+
+### git commit -m 'show modal animation'
+
+129 (show/hide modal animation), 130 (Backdrop Component)
