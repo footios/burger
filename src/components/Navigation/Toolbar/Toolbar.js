@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./Toolbar.module.css";
 
+// child of Layout
 const toolbar = props => {
   return (
     <header className={classes.Toolbar}>

@@ -3,6 +3,7 @@ import Eject from "../../hoc/Eject";
 import classes from "./Layout.module.css";
 import Toolbar from "../Navigation/Toolbar/Toolbar";
 
+// Child of App
 const layout = props => {
   return (
     <Eject>

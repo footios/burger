@@ -113,6 +113,6 @@ L. 128 We added a modal where you can see the summary of the order.
 Adding the Price to the Order Summary
 Section 8, Lecture 133
 
-### git commit -m 'added toolbar
+### git commit -m 'added toolbar'
 
 134.
