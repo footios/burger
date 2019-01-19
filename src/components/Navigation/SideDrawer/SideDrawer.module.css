@@ -20,11 +20,11 @@
 
 /* will be attached conditionaly to play animation */
 .Open {
-  transform: translateY(0); /* shift sideDrawer into the above position */
+  transform: translateX(0); /* shift sideDrawer into the above position */
 }
 
 .Close {
-  transform: translateY(-100);
+  transform: translate(-100%);
 }
 
 .Logo {

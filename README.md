@@ -149,3 +149,4 @@ v2. check alternative
 ### git commit -m 'Reusing the Backdrop'
 
 Section 8, Lecture 140
+Checkout branch reusing-backdrop.
