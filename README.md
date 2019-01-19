@@ -121,6 +121,11 @@ Section 8, Lecture 133
 
 135.
 
-### git commit '136'
+### git commit -m '136'
 
 136. Adding reusable navigation items
+
+### git commit -m '137 - 138 v1'
+
+137. Creating responsive sidebar
+138. Responsive adjustments
