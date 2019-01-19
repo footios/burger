@@ -138,3 +138,8 @@ check: Toolbar and SideBar. Not working!
 ### git commit -m 'alternative'
 
 v2. check alternative
+
+### git commit -m 'nav items'
+
+139. More about Responsive Adjustments
+     Section 8, Lecture 139
