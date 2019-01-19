@@ -143,3 +143,9 @@ v2. check alternative
 
 139. More about Responsive Adjustments
      Section 8, Lecture 139
+
+### git commit -m 'try following'
+
+### git commit -m 'Reusing the Backdrop'
+
+Section 8, Lecture 140
