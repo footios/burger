@@ -5,14 +5,26 @@ import Toolbar from "../Navigation/Toolbar/Toolbar";
 import SideDrawer from "../Navigation/SideDrawer/SideDrawer";
 
 // Child of App
-const layout = props => {
-  return (
-    <Eject>
-      <Toolbar />
-      <SideDrawer />
-      <main className={classes.Content}>{props.children}</main>
-    </Eject>
-  );
-};
+class Layout extends React.Component {
+  state = { backDrop: true, showSidedrawer: false };
 
-export default layout;
+  sideDrawerClosed = () => {
+    this.setState({ backDrop: false, showSidedrawer: true });
+  };
+
+  render() {
+    return (
+      <Eject>
+        <Toolbar />
+        <SideDrawer
+          show={this.state.backDrop}
+          //showSidedrawer={this.state.showSidedrwer}
+          sideDrawerClosed={this.sideDrawerClosed}
+        />
+        <main className={classes.Content}>{this.props.children}</main>
+      </Eject>
+    );
+  }
+}
+
+export default Layout;

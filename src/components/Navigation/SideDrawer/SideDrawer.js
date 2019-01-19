@@ -9,7 +9,9 @@ import Eject from "../../../hoc/Eject";
 const sideDrawer = props => {
   return (
     <Eject>
-      <Backdrop show={props.show} clicked={props.modalClosed} />
+      <div className={classes.showBackdrop}>
+        <Backdrop show={props.show} clicked={props.sideDrawerClosed} />
+      </div>
       <div className={classes.SideDrawer}>
         <div className={classes.Logo}>
           <Logo />
