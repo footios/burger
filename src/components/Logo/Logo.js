@@ -5,7 +5,7 @@ import classes from "./Logo.module.css";
 // child of Toolbar
 const logo = props => {
   return (
-    <div className={classes.Logo} style={{ height: props.height }}>
+    <div className={classes.Logo}>
       <img src={burgerLogo} alt="MyBurger" />
     </div>
   );

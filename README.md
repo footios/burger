@@ -133,4 +133,8 @@ Section 8, Lecture 133
 ### git commit -m 'update'
 
 v1. setting the height as a props in Logo and pass the height we want.
-check: Toolbar and SideBar
+check: Toolbar and SideBar. Not working!
+
+### git commit -m 'alternative'
+
+v2. check alternative

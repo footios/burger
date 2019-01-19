@@ -2,6 +2,7 @@
   position: fixed;
   width: 280px;
   max-width: 70%;
+  height: 100%;
   left: 0;
   top: 0;
   z-index: 200; /* the backdrop is 100, so the sideDrawer should be above it. */
@@ -24,4 +25,8 @@
 
 .Close {
   transform: translateY(-100);
+}
+
+.Logo {
+  height: 11%;
 }
