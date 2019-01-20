@@ -12,28 +12,20 @@
   transition: transform 0.3s ease-out;
 }
 
-@media (max-width: 499px) {
-  .showBackdrop {
-    display: inline-block;
-  }
-}
-
 @media (min-width: 500px) {
   .SideDrawer {
     display: none;
   }
-  .showBackdrop {
-    display: none;
-  }
 }
 
-/* will be attached conditionaly to play animation */
+/* will be attached conditionaly to play animation 
+Max used this to open close the sideDrawer by clicking the backDrop*/
 .Open {
-  transform: translateY(0); /* shift sideDrawer into the above position */
+  transform: translateX(0); /* shift sideDrawer into the above position */
 }
 
 .Close {
-  transform: translateY(-100);
+  transform: translateX(-100%);
 }
 
 .Logo {

@@ -29,3 +29,9 @@ In a few words:
 
 1. The backdrop doesn't show up again and again as the sideDrawer
 2. The sideDrawer is not removed when backdrop is clicked.
+
+### git commit -m 'fix sideDrawer'
+
+After we saw Max, we are now going to try again.
+I remembered the steps, but it didn't work, so I had to copy everything from
+Layout and SideDrawer
