@@ -35,3 +35,19 @@ In a few words:
 After we saw Max, we are now going to try again.
 I remembered the steps, but it didn't work, so I had to copy everything from
 Layout and SideDrawer
+
+### git commit -m 'fixed'
+
+It seems like we had a problem with the code in master. The backdrop would saw at first load of the page. Check [Q&A](https://www.udemy.com/react-the-complete-guide-incl-redux/learn/v4/questions/4639408)
+
+From Q&A:
+So the question is not why here bakcdrop show up in first load, but why it didn't already because of Modal.
+
+Sorry I got it! When clicking the ORDER button to purchase, the purchasing in state is reset to true (L. 129).
+
+So when the Modal goes open, then the backdrop shows.
+
+So here the showSideDrawer in the state of Layout should go to true, when the SideDrawer goes open. This happens when min-width is under 500px (see SideDrawer.css). So is there a way to reset the state according to the css info?
+
+Now it's fixed with an eventListener and by checking the innerWidth.
+Check Layout.js
