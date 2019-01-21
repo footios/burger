@@ -48,7 +48,7 @@ For the second version, we are going to create an other branch, called 'relative
 
 ### commit: update readme
 
-So we made a commit in the new 'relative positioning' branch after we updated this read me file. And it works! We now have two different branches with different readme files. So next we're going to work (on relative positioning) and add and commit and push our second version in the 'relative positioning' branch. Then we're going to come back on the master and go on from where we left it, without the changes of the second version.
+So we made a commit in the new 'relative positioning' branch after we updated this read me file. And it works! We now have two different branches with different readme files. So next we're going to work (on relative positioning) and add and commit and push our second version in the 'relative positioning' branch. Then we're going to come back on the master and go on from where we left it, without the changes of the second version. 
 
 ### update readme
 
