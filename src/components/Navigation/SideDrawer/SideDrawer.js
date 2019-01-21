@@ -12,6 +12,9 @@ const sideDrawer = props => {
   if (props.open) {
     attachedClasses = [classes.SideDrawer, classes.Open];
   }
+
+  //  className={[classes.SideDrawer, props.open ?
+  // classes.Open : classes.Close].join(' ')}
   return (
     <Eject>
       <Backdrop show={props.open} clicked={props.closed} />
