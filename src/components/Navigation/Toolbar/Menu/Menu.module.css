@@ -1,0 +1,26 @@
+.Menu {
+  margin: 10px 0;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  color: white;
+}
+
+.Menu:hover {
+  /* links of the page that we currently are */
+  color: #40a4c8;
+}
+
+/* This is not really needed, because when sidedrawer is open, 
+ the Menu gets coverd. But if I ommit it the NavigationItems
+ (Burger Builder and Checkout) change style ??? */
+@media (min-width: 500px) {
+  .Menu {
+    margin: 0;
+    display: flex;
+    height: 100%;
+    width: auto;
+    align-items: center;
+  }
+}
