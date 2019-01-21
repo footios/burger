@@ -8,9 +8,9 @@ class Menu extends Component {
 
   render() {
     return (
-      <div className={classes.Menu}>
-        <button onClick={this.context.toggleSideDrawer}>MENU</button>
-      </div>
+      <button className={classes.Menu} onClick={this.context.toggleSideDrawer}>
+        MENU
+      </button>
     );
   }
 }

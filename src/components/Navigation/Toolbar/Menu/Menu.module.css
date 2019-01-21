@@ -5,6 +5,9 @@
   width: 100%;
   cursor: pointer;
   color: white;
+  border: none;
+  text-decoration: none;
+  background-color: #703b09;
 }
 
 .Menu:hover {
