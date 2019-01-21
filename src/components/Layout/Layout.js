@@ -21,11 +21,13 @@ class Layout extends Component {
   };
 
   toggleSideDrawerHandler = () => {
-    this.setState(prevState => {
-      return {
-        showSideDrawer: !prevState.showSideDrawer
-      };
-    });
+    if (window.innerWidth < 500) {
+      this.setState(prevState => {
+        return {
+          showSideDrawer: !prevState.showSideDrawer
+        };
+      });
+    }
   };
 
   render() {

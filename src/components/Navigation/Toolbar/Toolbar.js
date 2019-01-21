@@ -11,8 +11,9 @@ const toolbar = props => {
     <header className={classes.Toolbar}>
       <SideDrawerContext.Provider
         value={{ toggleSideDrawer: props.toggleSideDrawer }}
-      />
-      <Menu />
+      >
+        <Menu />
+      </SideDrawerContext.Provider>
       <div className={classes.Logo}>
         <Logo />
       </div>
