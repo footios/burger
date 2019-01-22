@@ -1,3 +1,5 @@
+Note: The BurgerBuilder.js is empty. This is a paid Udemy course.
+
 # [React 16.6 - The Complete Guide (incl. React Router & Redux)](https://www.udemy.com/react-the-complete-guide-incl-redux/)
 
 Udemy course.
