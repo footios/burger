@@ -12,6 +12,7 @@ const sideDrawer = props => {
   if (props.open) {
     attachedClasses = [classes.SideDrawer, classes.Open];
   }
+console.log('props.open', props.open);
 
   //  className={[classes.SideDrawer, props.open ?
   // classes.Open : classes.Close].join(' ')}

@@ -13,6 +13,10 @@
   z-index: 90;
 }
 
+.MenuButton {
+  cursor: pointer;
+}
+
 .Toolbar nav {
   height: 100%;
 }
